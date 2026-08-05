@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class = "sidebar">
+        <h2>Mazuza</h2>
+    <div class="playlist">
+        <div class="musica" data-index="0">
+            <img src="assets/capas/capa 1.jpg" alt="Capa">
+            <div class="info-musica">
+                <span class="nome-musica">Preciso dizer que te amo</span>
+                <span class="nome-artista">Dona Duarte</span>
+            </div>
+        </div>
+
+        <div class="musica" data-index="1">
+            <img src="assets/capas/capa 2.jpg" alt="Capa">
+            <div class="info-musica">
+                <span class="nome-musica">O velho e a Flor</span>
+                <span class="nome-artista">Dona Duarte</span>
+            </div>
+        </div>
+
+        <div class="musica" data-index="2">
+            <img src="assets/capas/capa 3.jpg" alt="Capa">
+            <div class="info-musica">
+                <span class="nome-musica">Hotel California</span>
+                <span class="nome-artista">Dona Duarte</span>
+            </div>
+        </div>
+
+        <div class="musica" data-index="3">
+            <img src="assets/capas/capa 4.jpg" alt="Capa">
+            <div class="info-musica">
+                <span class="nome-musica">Still Loving You</span>
+                <span class="nome-artista">Dona Duarte</span>
+            </div>
+        </div>
+
+        <div class="musica" data-index="4">
+            <img src="assets/capas/capa 5.jpg" alt="Capa">
+            <div class="info-musica">
+                <span class="nome-musica">Cabide</span>
+                <span class="nome-artista">Dona Duarte</span>
+            </div>
+        </div>
+    </div>
+    </aside>
+    
+    <main class = "player">
+        <div class="capa-container">
+
+            <img src="assets/capas/capa 1.jpg" id="capa" alt="capa da musica">
+
+            <div class="vinil">
+                <div class="vinil-centro"></div>
+            </div>
+
+        </div>
+        <h1 id = titulo> musica </h1>
+        <h3 id = "artista"> Dona Duarte </h3>
+        <div class = tempo>
+            <span id = "tempo-atual"> 0:00 </span>
+            <input type="range" id = "barra-tempo" value = "0" min = "0" max = "100">
+            <span id = "tempo-total"> 0:00 </span>
+        </div>
+        <div class = "controles">
+            <button id = "anterior">⏮</button>
+            <button id = "play">▶</button>
+            <button id = "proximo">⏭</button>
+        </div>
+        <div class = "volume">
+            <span>🔈</span>
+            <input type="range" id = "barra-volume" value = "100" min = "0" max = "100">
+            <span>🔊</span>
+        </div>
+        <audio id = "audio"></audio>
+    </main>
+    <script src = "script.js"></script>
+</body>
+</html>
