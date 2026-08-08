@@ -31,6 +31,13 @@ const musica = [
         artista: "Dona Duarte",
         audio: "assets/musicas/musica 5.mp3",
         capa: "assets/capas/capa 5.jpg"
+    },
+
+    {
+        titulo: "Enter Sandman",
+        artista: "Dona Duarte",
+        audio: "assets/musicas/musica 6.mp3",
+        capa: "assets/capas/capa 6.jpg"
     }
 
 ];
@@ -54,7 +61,14 @@ const barraVolume = document.getElementById("barra-volume");
 
 const itensPlaylist = document.querySelectorAll(".musica");
 
+const botaoTeste = document.getElementById("btn");
+
 let indice = 0;
+
+/*
+alert("Esse projeto foi feito pra demonstrar minha admiração  por você e pelo que você escolhe sempre compartilhar comigo. Espero que goste, foi feito com amor =)");
+alert("OBS: Tem poucas musicas pq alguem ai fica me mandando as melhores em visualiação unica, alem de tudo estar sem tratamento de audio, até pq se foi vc q fez, ja está otimo")
+*/
 
 function atualizarPlaylist() {
     itensPlaylist.forEach((item, i) => {
@@ -89,6 +103,7 @@ itensPlaylist.forEach(item => {
 });
 
 let tocando = false;
+
 
 botaoPlay.addEventListener("click", () => {
 
