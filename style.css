@@ -74,57 +74,52 @@ body {
     }
 
     .player {
-        padding: 10px 15px;
-        transform: scale(0.85);
-        transform-origin: top center;
+        width: 100%;
+        padding: 20px 15px;
+        justify-content: flex-start;
     }
 
     #capa {
-        width: 170px;
-        height: 170px;
-        margin-bottom: 10px;
+        width: min(55vw, 220px);
+        height: min(55vw, 220px);
+        margin-bottom: 15px;
     }
 
     #titulo {
-        font-size: 18px;
-        margin-bottom: 2px;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 3px;
     }
 
     #artista {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 
     .tempo {
-        width: 80%;
-        gap: 6px;
-        font-size: 10px;
+        width: 90%;
+        gap: 8px;
+        font-size: 11px;
     }
 
     .controles {
-        gap: 12px;
-        margin-top: 12px;
+        gap: 18px;
+        margin-top: 18px;
     }
 
     .controles button {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
     }
 
     .volume {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     #barra-volume {
-        width: 100px;
+        width: 130px;
     }
-
-    .vinil {
-        width: 170px;
-        height: 170px;
-    }
-
 
 }
 
