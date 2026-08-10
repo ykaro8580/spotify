@@ -50,6 +50,38 @@ body{
 
 }
 
+@media (max-width: 700px) {
+
+    body {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .player {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    #capa {
+        width: min(70vw, 280px);
+        height: min(70vw, 280px);
+    }
+
+    .tempo {
+        width: 90%;
+    }
+
+    .controles {
+        margin-top: 25px;
+    }
+
+}
+
 .sidebar{
     width: 400px;
     background: #0000;
